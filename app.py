@@ -16,7 +16,32 @@
 
 # ders 4 ---------------------------------------------------------------
 
-strvar = "python"
-print(len(strvar))  
-print(strvar[2:])
-print(strvar.upper())
+# strvar = "python"
+# print(len(strvar))  
+# print(strvar[2:])
+# print(strvar.upper())
+
+#ders 6 ----------------------------------------------------------------
+
+# sayilar=[1,1,3,657,876,898,5676]
+# sayilar.sort()
+# print(sayilar)
+
+# sayilar.reverse()
+# print(sayilar)
+
+# print(set(sayilar))
+
+# "tup veri tipi değiştirilemez"
+# "count kaç tane var olduğunu sorgulamak için kullanılır  orn: list.count('a')"
+
+# ders 7 -----------------------------------------------------------------
+
+dict={
+    'isim':"eren",
+    'yas':21,
+    'yasadiği yer':"trabzon"
+}
+print(dict)
+print(dict.get("yas"))
+print(dict['yasadiği yer'])
