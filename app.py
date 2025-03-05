@@ -12,4 +12,11 @@
 
 # ders 3 ---------------------------------------------------------------
 
-print(type(2))
+# print(type(2))
+
+# ders 4 ---------------------------------------------------------------
+
+strvar = "python"
+print(len(strvar))  
+print(strvar[2:])
+print(strvar.upper())
