@@ -37,11 +37,23 @@
 
 # ders 7 -----------------------------------------------------------------
 
-dict={
-    'isim':"eren",
-    'yas':21,
-    'yasadiği yer':"trabzon"
-}
-print(dict)
-print(dict.get("yas"))
-print(dict['yasadiği yer'])
+# dict={
+#     'isim':"eren",
+#     'yas':21,
+#     'yasadiği yer':"trabzon"
+# }
+# print(dict)
+# print(dict.get("yas"))
+# print(dict['yasadiği yer'])
+
+# ders 8 ------------------------------------------------------------------
+
+hava_durumu='karli'
+if hava_durumu=='soguk':
+    print('mont giyin')
+
+elif hava_durumu=='karli':
+    print('atki al')
+
+else:
+    print('tamam')
