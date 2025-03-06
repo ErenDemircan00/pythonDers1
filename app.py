@@ -48,12 +48,23 @@
 
 # ders 8 ------------------------------------------------------------------
 
-hava_durumu='karli'
-if hava_durumu=='soguk':
-    print('mont giyin')
+# hava_durumu='karli'
+# if hava_durumu=='soguk':
+#     print('mont giyin')
 
-elif hava_durumu=='karli':
-    print('atki al')
+# elif hava_durumu=='karli':
+#     print('atki al')
 
+# else:
+#     print('tamam')
+
+liste=['a',3,5,'h']
+hedef_char='f'
+if hedef_char in liste:
+    print('mevcut')
 else:
-    print('tamam')
+    liste.append(hedef_char)
+    print('yoktu ama eklendi !')
+    print('Güncel liste {}'.format(liste))     
+    liste.pop()
+    print('Güncel liste {}'.format(liste)) 
