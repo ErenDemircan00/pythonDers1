@@ -73,9 +73,17 @@
 # for isimler in yorum_birakanlar:
 #     print('\n',isimler)
 
-kullanici_sayisi=0
-yorum_birakanlar=['eren demircan','yusuf can dursun','memet ali erbil','ahmet balaban']
-for isimler in yorum_birakanlar:
-    kullanici_sayisi=kullanici_sayisi+1
-    print(kullanici_sayisi,isimler)
+# kullanici_sayisi=0
+# yorum_birakanlar=['eren demircan','yusuf can dursun','memet ali erbil','ahmet balaban']
+# for isimler in yorum_birakanlar:
+#     kullanici_sayisi=kullanici_sayisi+1
+#     print(kullanici_sayisi,isimler) 
+
+dict={
+    'ad':'eren',
+    'soyad': 'demircan'
+}
+print(dict.items())
+for x,y in dict.items():
+    print('Key:{} ,\t Value: {}'.format(x,y))
   
