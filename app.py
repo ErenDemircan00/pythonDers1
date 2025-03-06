@@ -58,13 +58,17 @@
 # else:
 #     print('tamam')
 
-liste=['a',3,5,'h']
-hedef_char='f'
-if hedef_char in liste:
-    print('mevcut')
-else:
-    liste.append(hedef_char)
-    print('yoktu ama eklendi !')
-    print('Güncel liste {}'.format(liste))     
-    liste.pop()
-    print('Güncel liste {}'.format(liste)) 
+# liste=['a',3,5,'h']
+# hedef_char='f'
+# if hedef_char in liste:
+#     print('mevcut')
+# else:
+#     liste.append(hedef_char)
+#     print('yoktu ama eklendi !')
+#     print('Güncel liste {}'.format(liste))     
+    
+# ders 9 -------------------------------------------------------------------
+
+yorum_birakanlar=['eren demircan','yusuf can dursun','memet ali erbil','ahmet balaban']
+for isimler in yorum_birakanlar:
+    print(isimler)
