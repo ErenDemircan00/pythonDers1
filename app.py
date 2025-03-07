@@ -79,11 +79,31 @@
 #     kullanici_sayisi=kullanici_sayisi+1
 #     print(kullanici_sayisi,isimler) 
 
-dict={
-    'ad':'eren',
-    'soyad': 'demircan'
-}
-print(dict.items())
-for x,y in dict.items():
-    print('Key:{} ,\t Value: {}'.format(x,y))
+# dict={
+#     'ad':'eren',
+#     'soyad': 'demircan'
+# }
+# print(dict.items())
+# for x,y in dict.items():
+#     print('Key:{} ,\t Value: {}'.format(x,y))
   
+# ders 10 --------------------------------------------------------------------
+
+print(range(10))
+print([*range(10)])  # alttakiyle aynı
+print(list(range(10)))
+print('---------------------------------\n')
+
+for sayi in range(5):
+    print(sayi)
+
+print('---------------------------------\n')
+
+harfler=['a','b','c','d','e']
+for indeks,harf in enumerate(harfler):
+    print(indeks+1,harf)
+print('---------------------------------\n')
+ulkeler=['TR','AZE','FR']
+siralamalar=range(1,4) 
+for ulke in zip(siralamalar,ulkeler):
+    print(ulke)   
