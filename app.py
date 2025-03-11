@@ -89,21 +89,45 @@
   
 # ders 10 --------------------------------------------------------------------
 
-print(range(10))
-print([*range(10)])  # alttakiyle aynı
-print(list(range(10)))
-print('---------------------------------\n')
+# print(range(10))
+# print([*range(10)])  # alttakiyle aynı
+# print(list(range(10)))
+# print('---------------------------------\n')
 
-for sayi in range(5):
+# for sayi in range(5):
+#     print(sayi)
+
+# print('---------------------------------\n')
+
+# harfler=['a','b','c','d','e']
+# for indeks,harf in enumerate(harfler):
+#     print(indeks+1,harf)
+# print('---------------------------------\n')
+# ulkeler=['TR','AZE','FR']
+# siralamalar=range(1,4) 
+# for ulke in zip(siralamalar,ulkeler):
+#     print(ulke)   
+
+# ders 11 ------------------------------------------------------------------
+
+harfler=['a','b','c','d','e']*10
+for indeks,harf in enumerate(harfler):
+    if harf=='c':
+        print('{} harfi {}. indekste'.format(harf,indeks))
+        break
+
+
+for sayi in range(1,8):
+    if sayi%2==0:
+        continue
     print(sayi)
 
-print('---------------------------------\n')
+print('---------------------------')
 
-harfler=['a','b','c','d','e']
-for indeks,harf in enumerate(harfler):
-    print(indeks+1,harf)
-print('---------------------------------\n')
-ulkeler=['TR','AZE','FR']
-siralamalar=range(1,4) 
-for ulke in zip(siralamalar,ulkeler):
-    print(ulke)   
+for sayi in range(1,8):
+    if sayi%2==0:
+        pass
+    else:
+        print(sayi)
+
+    
