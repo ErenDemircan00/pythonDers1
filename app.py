@@ -110,24 +110,30 @@
 
 # ders 11 ------------------------------------------------------------------
 
-harfler=['a','b','c','d','e']*10
-for indeks,harf in enumerate(harfler):
-    if harf=='c':
-        print('{} harfi {}. indekste'.format(harf,indeks))
-        break
+# harfler=['a','b','c','d','e']*10
+# for indeks,harf in enumerate(harfler):
+#     if harf=='c':
+#         print('{} harfi {}. indekste'.format(harf,indeks))
+#         break
 
 
-for sayi in range(1,8):
-    if sayi%2==0:
-        continue
-    print(sayi)
+# for sayi in range(1,8):
+#     if sayi%2==0:
+#         continue
+#     print(sayi)
 
-print('---------------------------')
+# print('---------------------------')
 
-for sayi in range(1,8):
-    if sayi%2==0:
-        pass
-    else:
-        print(sayi)
+# for sayi in range(1,8):
+#     if sayi%2==0:
+#         pass
+#     else:
+#         print(sayi)
 
+# ders 12 ------------------------------------------------------------------
     
+def fonksiyon():
+    print(5)
+def fonksiyon1():
+    print('a')
+fonksiyon1()    
