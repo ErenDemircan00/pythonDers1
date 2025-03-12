@@ -132,8 +132,21 @@
 
 # ders 12 ------------------------------------------------------------------
     
-def fonksiyon():
-    print(5)
-def fonksiyon1():
-    print('a')
-fonksiyon1()    
+# def fonksiyon():
+#     print(5)
+# def fonksiyon1():
+#     print('a')
+# fonksiyon1()    
+
+
+def buyuk_sayi_dondur(a,b):
+    if a<b:
+        return b
+    elif a>b:
+        return a
+def metin_yazdir(a,b):
+    buyuk_sayi=buyuk_sayi_dondur(a,b)
+    sablon_metin="{} daha buyuk bir sayidir".format(buyuk_sayi)
+    print(sablon_metin)
+    
+metin_yazdir(10,5)
