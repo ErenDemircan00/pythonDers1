@@ -139,14 +139,70 @@
 # fonksiyon1()    
 
 
-def buyuk_sayi_dondur(a,b):
-    if a<b:
-        return b
-    elif a>b:
-        return a
-def metin_yazdir(a,b):
-    buyuk_sayi=buyuk_sayi_dondur(a,b)
-    sablon_metin="{} daha buyuk bir sayidir".format(buyuk_sayi)
-    print(sablon_metin)
+# def buyuk_sayi_dondur(a,b):
+#     if a<b:
+#         return b
+#     elif a>b:
+#         return a
+# def metin_yazdir(a,b):
+#     buyuk_sayi=buyuk_sayi_dondur(a,b)
+#     sablon_metin="{} daha buyuk bir sayidir".format(buyuk_sayi)
+#     print(sablon_metin)
     
-metin_yazdir(10,5)
+# metin_yazdir(10,5)
+
+# ders 13 ------------------------------------------------------------------
+
+# def karesini_al(x):
+#     return x**2
+
+# sayilar=[*range(1,6)]       #map bir fonksiyonu listenin her elemanina uygulamasini saglar
+# print( [ * map ( karesini_al,sayilar ) ] )
+# print( [*map(lambda sayi: sayi**2,sayilar)])   #lambda ise algoritma yolunu gösterek yapmış oluyor
+
+
+
+# def cift_sayilari_listele(x):
+#     return x if x%2==0 else None
+
+# sayilarim=[*range(1,6)]
+# print([*filter(cift_sayilari_listele,sayilarim)])
+
+
+
+
+# girdi=input("Bir mesaj giriniz")
+# print(girdi)
+
+
+# def sayi_deger():
+#      girdi =input("bir sayi giriniz: ")
+
+#      while not girdi.isdigit():
+#            print(  "girdiğiniz değer sayi tipinde değildir")
+#            girdi=input("bir değer giriniz: ")
+#     #  if girdi.isdigit():
+#     #       print( "tebrikler sayi tipinde bir deger girdiniz")
+
+
+#      else:
+#         #  print(  "girdiğiniz değer sayi tipinde değildir")
+#          print( "tebrikler sayi tipinde bir deger girdiniz")
+     
+# sayi_deger()     
+
+
+
+
+
+def eposta_kontrol():
+    girdi=input(" Geçerli bir  e-posta edresi giriniz. ")
+
+    while not (('.' in girdi) and ('@' in girdi)):
+        print("Geçerli bir e-posta girmediniz!")
+        girdi=input(" Geçerli bir  -posta edresi giriniz. ")
+
+    else:
+        print("Tebrikler geçerli bir e-postayla girişiniz yapıldı!")
+
+eposta_kontrol()
