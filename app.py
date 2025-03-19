@@ -195,14 +195,53 @@
 
 
 
-def eposta_kontrol():
-    girdi=input(" Geçerli bir  e-posta edresi giriniz. ")
+# def eposta_kontrol():
+#     girdi=input(" Geçerli bir  e-posta edresi giriniz. ")
 
-    while not (('.' in girdi) and ('@' in girdi)):
-        print("Geçerli bir e-posta girmediniz!")
-        girdi=input(" Geçerli bir  -posta edresi giriniz. ")
+#     while not (('.' in girdi) and ('@' in girdi)):
+#         print("Geçerli bir e-posta girmediniz!")
+#         girdi=input(" Geçerli bir  -posta edresi giriniz. ")
 
-    else:
-        print("Tebrikler geçerli bir e-postayla girişiniz yapıldı!")
+#     else:
+#         print("Tebrikler geçerli bir e-postayla girişiniz yapıldı!")
 
-eposta_kontrol()
+# eposta_kontrol()
+
+
+# ders 14 ------------------------------------------------------------------
+
+
+# def tam_sayiya_cevir():                                                   #round
+#     girdi=input("Bir ondalık sayı giriniz: ")
+#     print("{} bu tam sayıya yuvarlandı ".format(round(float(girdi))))
+# tam_sayiya_cevir()
+
+
+
+# def tam_sayiya_cevir():
+#     girdi=input("Bir ondalık sayı giriniz: ")
+#                                                                          #try-except
+#     try:
+#         girdi=float(girdi)
+#         print("Tam sayıya yuvarlanan ifade {} ".format(round(girdi)))
+#     except:
+#         print("{} tam sayiya çevirilemeyen ifade".format(girdi))    
+# tam_sayiya_cevir()
+
+
+
+def tam_sayiya_cevir():
+    girdi=input("Bir ondalık sayı giriniz: ")
+    status=''
+                                                                         
+    try:
+        girdi=float(girdi)
+        print("Tam sayıya yuvarlanan ifade {} ".format(round(girdi)))
+        status='basarili'
+    except:
+        print("{} tam sayiya çevirilemeyen ifade".format(girdi))    
+        status='basarisiz'
+    finally:
+        print("Çevirme işlemi {} olarak gerçekleşti".format(status))    
+tam_sayiya_cevir()
+
