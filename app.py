@@ -230,18 +230,70 @@
 
 
 
-def tam_sayiya_cevir():
-    girdi=input("Bir ondalık sayı giriniz: ")
-    status=''
+# def tam_sayiya_cevir():
+#     girdi=input("Bir ondalık sayı giriniz: ")
+#     status=''
                                                                          
-    try:
-        girdi=float(girdi)
-        print("Tam sayıya yuvarlanan ifade {} ".format(round(girdi)))
-        status='basarili'
-    except:
-        print("{} tam sayiya çevirilemeyen ifade".format(girdi))    
-        status='basarisiz'
-    finally:
-        print("Çevirme işlemi {} olarak gerçekleşti".format(status))    
-tam_sayiya_cevir()
+#     try:                                                         #finally
+#         girdi=float(girdi)
+#         print("Tam sayıya yuvarlanan ifade {} ".format(round(girdi)))
+#         status='basarili'
+#     except:
+#         print("{} tam sayiya çevirilemeyen ifade".format(girdi))    
+#         status='basarisiz'
+#     finally:
+#         print("Çevirme işlemi {} olarak gerçekleşti".format(status))    
+# tam_sayiya_cevir()
 
+
+
+
+# def tam_sayiya_cevir():
+#     while True:
+#         girdi=input("Bir ondalık sayı giriniz: ")
+#         status=''
+#         try:                                                         
+#             girdi=float(girdi)
+#             print("Tam sayıya yuvarlanan ifade {} ".format(round(girdi)))
+#             status='basarili'
+#         except:
+#             print("{} tam sayiya çevirilemeyen ifade".format(girdi))    
+#             status='basarisiz'
+#         finally:
+#             print("Çevirme işlemi {} olarak gerçekleşti".format(status))    
+#             pass
+# tam_sayiya_cevir()
+
+
+
+# class Ucus():
+#     hava_yolu="Thy"
+
+#     def __init__(self,kod,kalkis,varis,sure,kapasite,yolcu):
+#         self.kod=kod
+#         self.kalkis=kalkis
+#         self.varis=varis
+#         self.sure=sure
+#         self.kapasite=kapasite
+#         self.yolcu=yolcu
+
+# ucus2=Ucus(11 , 12.20 , 15.20 , 1.30 , 150 , 123)
+# print("yolcu sayisi: " , ucus2.yolcu)
+
+
+class Ucus():
+    hava_yolu="Thy"
+
+    def __init__(self,kod,kalkis,varis,sure,kapasite,yolcu):
+        self.kod=kod
+        self.kalkis=kalkis
+        self.varis=varis
+        self.sure=sure
+        self.kapasite=kapasite
+        self.yolcu=yolcu
+
+    def anons_yap(self):
+        return "{} sefer sayili uçuş için bekleniyorsunuz".format(self.kod)
+    
+ucus1=Ucus('TK12385','IST','ANK',100 , 180 , 130)
+print(ucus1.anons_yap())
