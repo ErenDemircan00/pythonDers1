@@ -295,5 +295,35 @@ class Ucus():
     def anons_yap(self):
         return "{} sefer sayili uçuş için bekleniyorsunuz".format(self.kod)
     
+    def koltuk_sayisi(self):
+        return self.kapasite - self.yolcu
+    
+    def bilet_satisi(self,bilet_Sayisi=1):    
+        if self.yolcu + bilet_Sayisi<=self.kapasite:
+            self.yolcu += bilet_Sayisi
+            self.koltuk_sayisi()
+            return ('{} adet bilet satilmiştir, kalan koltuk sayisi {} adettir'.format(bilet_Sayisi,self.koltuk_sayisi()))
+        else:
+            return ('İşlem gerçekleştirilemedi!')
+
+    def bilet_iptal(self,bilet_Sayisi=1):
+        if self.yolcu-bilet_Sayisi>=bilet_Sayisi:
+            self.yolcu -=bilet_Sayisi
+            return ('{} adet bilet iptal edilmiştir, güncel koltuk sayisi {} adettir'.format(bilet_Sayisi,self.koltuk_sayisi()))
+        else:
+            return ('İşlem olmadı!')
+
+
+
+
 ucus1=Ucus('TK12385','IST','ANK',100 , 180 , 130)
-print(ucus1.anons_yap())
+print(ucus1.koltuk_sayisi(),'adet boş koltuk vardır')
+print(ucus1.bilet_satisi(10))
+print(ucus1.bilet_satisi(20))
+print(ucus1.bilet_satisi(25))
+print(ucus1.koltuk_sayisi())
+print(ucus1.bilet_iptal(10))
+print(ucus1.bilet_iptal(100))
+
+
+    
