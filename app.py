@@ -317,13 +317,38 @@ class Ucus():
 
 
 ucus1=Ucus('TK12385','IST','ANK',100 , 180 , 130)
-print(ucus1.koltuk_sayisi(),'adet boş koltuk vardır')
-print(ucus1.bilet_satisi(10))
-print(ucus1.bilet_satisi(20))
-print(ucus1.bilet_satisi(25))
-print(ucus1.koltuk_sayisi())
-print(ucus1.bilet_iptal(10))
-print(ucus1.bilet_iptal(100))
+print(ucus1.koltuk_sayisi(),'adet boş koltuk vardır')        #deneme
+print(ucus1.bilet_satisi(10))                                #deneme
+print(ucus1.bilet_satisi(20))                                #deneme
+print(ucus1.bilet_satisi(25))                                #deneme
+print(ucus1.koltuk_sayisi())                                 #deneme
+print(ucus1.bilet_iptal(10))                                 #deneme
+print(ucus1.bilet_iptal(100))                                #deneme
 
 
-    
+
+# ders 15 ------------------------------------------------------------------
+
+
+class Seyahat():
+    def __init__(self,kalkis,varis):
+       self.kalkis=kalkis
+       self.varis=varis
+
+    def anons(self):
+        return "{}-{} seyahatimize hoşgeldiniz".format(self.kalkis,self.varis)
+
+class Otobus(Seyahat):
+    def __init__(self, molaDuraklari,kalkis,varis):
+        Seyahat.__init__(self,kalkis,varis)
+        self.molaDuraklari=molaDuraklari
+
+seyahat1=Seyahat('Antalya', 'Bodrum')
+print(seyahat1.anons())  
+
+oto1=Otobus(['Bolu','Kutahya'],'ANT','BOD')
+print(oto1.molaDuraklari)
+print(oto1.kalkis)
+print(oto1.varis)
+print(oto1.anons())
+
